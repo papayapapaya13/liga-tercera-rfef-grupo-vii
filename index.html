@@ -20,9 +20,15 @@
 
 <form id="formResultados">
     <div id="partidos">
-        <label>RSD Alcalá vs Rayo Vallecano B: <input type="text" name="resultado1" placeholder="Ej: 2-1"></label><br>
-        <label>Trival Valderas vs CUC Villalba: <input type="text" name="resultado2" placeholder="Ej: 3-0"></label><br>
-        <!-- Agregar los demás partidos aquí -->
+        <label>ARAVACA vs CARABANCHEL: <input type="text" name="resultado1" placeholder="Ej: 2-1"></label><br>
+        <label>MEXICO VS TRES CANTOS: <input type="text" name="resultado2" placeholder="Ej: 3-0"></label><br>
+        <label>PARLA VS LEGANÉS B: <input type="text" name="resultado3" placeholder="Ej: 1-1"></label><br>
+        <label>ALCORCON B VS CALA POZUELO: <input type="text" name="resultado4" placeholder="Ej: 2-1"></label><br>
+        <label>TRIVAL VALDERAS VS EL ALAMO: <input type="text" name="resultado5" placeholder="Ej: 3-0"></label><br>
+        <label>VILLAVEERDE VS RAYO B: <input type="text" name="resultado6" placeholder="Ej: 0-2"></label><br>
+        <label>CANILLAS VS TORREJON: <input type="text" name="resultado7" placeholder="Ej: 1-1"></label><br>
+        <label>LAS ROZAS VS ALCALA: <input type="text" name="resultado8" placeholder="Ej: 2-1"></label><br>
+        <label>GALAPAGAR VS CUC VILLALBA: <input type="text" name="resultado9" placeholder="Ej: 1-0"></label><br>
     </div>
     <button type="submit">Actualizar Clasificación</button>
 </form>
@@ -94,8 +100,14 @@ document.getElementById('formResultados').addEventListener('submit', function (e
     const form = event.target;
     const resultados = [
         form.resultado1.value,
-        form.resultado2.value
-        // Aquí puedes agregar los demás resultados
+        form.resultado2.value,
+        form.resultado3.value,
+        form.resultado4.value,
+        form.resultado5.value,
+        form.resultado6.value,
+        form.resultado7.value,
+        form.resultado8.value,
+        form.resultado9.value
     ];
 
     // Actualizar los equipos con los resultados
